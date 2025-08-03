@@ -75,8 +75,6 @@ python manage.py runserver
 Visit  http://127.0.0.1:8000/ in your browser.
 
 
-
-
 Usage
 Register for a new account or log in with existing credentials.
 Add tasks using the input form.
