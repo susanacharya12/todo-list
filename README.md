@@ -77,16 +77,6 @@ Visit  http://127.0.0.1:8000/ in your browser.
 
 
 
-##  Screenshots
-
-### Login Page
-![Login Page](screenshots/login.png)
-
-###  To-Do List Page
-![To-Do List Page](screenshots/todo-list.png)
-
-
-
 Usage
 Register for a new account or log in with existing credentials.
 Add tasks using the input form.
