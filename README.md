@@ -1,10 +1,11 @@
 
-
+ ##  To-Do List Project
+ 
 A simple, user-authenticated To-Do List web application built with Django. Users can register, log in, and manage their personal tasks with a clean and responsive interface.
 
 ---
 
-## 🚀 Features
+##  Features
 
 -  User registration and login/logout
 -  Add, view, complete, delete, and search tasks
@@ -46,7 +47,7 @@ todo-list/
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -71,9 +72,22 @@ python manage.py migrate
 
 python manage.py runserver
 
-Visit 👉 http://127.0.0.1:8000/ in your browser.
+Visit  http://127.0.0.1:8000/ in your browser.
 
- Usage
+
+
+
+##  Screenshots
+
+### Login Page
+![Login Page](screenshots/login.png)
+
+###  To-Do List Page
+![To-Do List Page](screenshots/todo-list.png)
+
+
+
+Usage
 Register for a new account or log in with existing credentials.
 Add tasks using the input form.
 Mark tasks as complete/incomplete by clicking the checkmark.
@@ -81,29 +95,17 @@ Delete tasks using the delete icon.
 Search tasks using the search bar.
 
 
-🧾 Code Overview
+Code Overview
 models.py – Defines the Task model with user, title, completed status, and creation date.
 forms.py – Contains forms for user registration and task creation.
 views.py – Handles user authentication and task CRUD operations.
 templates/ – Contains HTML files like login.html, register.html, todo_list.html, etc.
 
 
-📸 Screenshots
-## 📸 Screenshots
-
-### 🔐 Login Page
-<img width="1512" height="982" alt="Login" src="https://github.com/user-attachments/assets/777991c2-6679-46f3-a8ca-f753decb4968" /># 📝 To-Do List Django Application
-
-### ✅ To-Do List Page
-![To-Do List](https://raw.githubusercontent.com/susanacharya12/todo-list/main/screenshots/<img width="1512" height="982" alt="ToDO" src="https://github.com/user-attachments/assets/53f823cd-b3fd-4a59-896c-b971eea523e0" />
-)
+ License
+This project is created for Project purposes only.
 
 
-
-📜 License
-This project is created for educational purposes only.
-
-
-👤 Author
+ Author
 Susan Acharya
-GitHub Profile
+
