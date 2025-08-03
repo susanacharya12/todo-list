@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+            padding: 30px;
+        }
+        h2 {
+            margin-top: 0;
+            background: linear-gradient(to right, #e66465, #9198e5);
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+        }
+        form input, form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .task {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+        .actions a {
+            margin-right: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 500px;
+        margin: 50px auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #ccc;
+        padding: 0;
+    }
+    h2 {
+        margin: 0;
+        background: linear-gradient(to right, #e66465, #9198e5);
+        color: white;
+        padding: 15px;
+        border-radius: 8px 8px 0 0;
+    }
+    p {
+        margin: 10px 15px;
+    }
+    form {
+        margin: 10px 15px;
+    }
+    form input, form button {
+        padding: 8px;
+    }
+    .task {
+        margin: 0 15px;
+    }
+    .completed {
+        text-decoration: line-through;
+        color: gray;
+    }
+    a {
+        color: #555;
+    }
+</style>
+

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Hello {{ request.user.username }}</h2>
+<p>You have <strong>{{ incomplete_count }}</strong> incomplete {{ incomplete_count|pluralize:"task,tasks" }}</p>
+
+<form method="get" style="display:flex; gap:5px;">
+    <input type="text" name="search" placeholder="Search..." value="{{ query }}">
+    <button type="submit">Search</button>
+    <a href="#" onclick="document.getElementById('add-task-form').style.display='block'; return false;" style="font-size:24px;text-decoration:none;">+</a>
+</form>
+
+<form id="add-task-form" method="post" style="display:none;margin-top:10px;">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add Task</button>
+</form>
+
+<hr>
+
+{% for task in tasks %}
+<div class="task {% if task.completed %}completed{% endif %}" style="display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #ddd; padding:5px 0;">
+    <div>
+        <a href="{% url 'complete_task' task.id %}" style="margin-right:10px; text-decoration:none;">
+            {% if task.completed %}
+                &#x2713; <!-- Checkmark -->
+            {% else %}
+                &#x25CB; <!-- Empty circle -->
+            {% endif %}
+        </a>
+        {{ task.title }}
+    </div>
+    <div>
+        <a href="{% url 'delete_task' task.id %}" style="text-decoration:none;color:red;">&#x2715;</a>
+    </div>
+</div>
+{% empty %}
+<p>No tasks found.</p>
+{% endfor %}
+
+<a href="{% url 'logout' %}" style="float:right; margin-top:10px;">Logout</a>
+{% endblock %}
